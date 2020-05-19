@@ -1,0 +1,7 @@
+source.sh
+---------
+bash source.sh newfileName templatename
+
+time.sh
+--------
+bash time.sh filename
