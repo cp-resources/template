@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define pvar(x) clog<<#x<<":"<<x<<" "
 using namespace std;
 using ll = long long int;
 const int mod=1000000007;
