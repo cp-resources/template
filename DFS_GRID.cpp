@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#define ll long long int
-#define mod 1000000007
+using ll = long long int;
+#define mod 1000000009
 #define nxt "\n"
 #define intpair pair<int,int>
 using namespace std;
@@ -8,8 +8,8 @@ bool vis[500][500], flag=true;
 int X[]={-1,0,1,0};//up,left,down,right
 int Y[]={0,1,0,-1};
 bool isValid(int x,int y,int row,int col){
-	if(x>=0 && x<row && y>=0 && y<col)return true;
-	else return false;
+	if(x>=0 && x<row && y>=0 && y<col) return true;
+	return false;
 }
 void dfs(int x,int y,vector<vector<char>> &v,int row,int col){
 	if(v[x][y]=='S' || v[x][y]=='D')return;
@@ -30,6 +30,7 @@ void dfs(int x,int y,vector<vector<char>> &v,int row,int col){
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
+	cout.tie(0);
 	int r,c;
 	cin>>r>>c;
 	vector<vector<char>> a(r);
